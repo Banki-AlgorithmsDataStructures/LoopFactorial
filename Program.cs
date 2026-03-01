@@ -3,7 +3,7 @@
 // Applies bounds: too small (<0) → uses 0, too big (>12) → uses 12 (prevents overflow)
 // Uses safe TryParse input and long for larger results
 
-Console.Write("Enter a positive (or zero) integer to calculate factorial (recommended: 0-100):");
+Console.Write("Enter a positive (or zero) integer to calculate factorial (recommended: 0-20):");
 
 // Safe input parsing - handles invalid/non-numeric input
 if (!uint.TryParse(Console.ReadLine(), out uint n) || n < 0)
